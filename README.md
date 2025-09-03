@@ -56,3 +56,6 @@ docker run --rm -it itzray/console-text-writer list
   - Ensure Linux is also supported
 - Add GUI text display
 - Investigate using Youtube API, search for song or provide URL (May be best for MVP) and then automatically generate a .wav of the video.
+
+### Note
+I've kept some unnecessary files in here like the docker files just to act as a showcase of its existance (for employers).
