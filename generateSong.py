@@ -80,6 +80,13 @@ def _generate_lyrics():
             encoding="utf-8",
         ) as f:
             json.dump(words_json, f, ensure_ascii=False, indent=2)
+        songs.append({
+            "Id": len(songs),
+            "song_name": song_name
+        })
+        print(f"Generated lyric file for {song_name}.")
+    with open(f"{SONG_LIST_JSON_FILE}", "w", encoding="utf-8") as f:
+        json.dump(songs, f, ensure_ascii=False, indent=2)
 
 def generate_lyrics():
     _generate_lyrics()
@@ -93,4 +100,5 @@ def generate_lyrics():
     print("ungenerated songs list emptied.")
 
 #add_songs()
+
 generate_lyrics()
