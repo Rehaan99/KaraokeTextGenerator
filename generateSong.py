@@ -13,6 +13,7 @@ def clear_console():
     os.system("cls" if os.name == "nt" else "clear")
 
 def add_songs():
+    new_songs = []
     clear_console()
     audio_files = [f for f in os.listdir(AUDIO_DIR) if os.path.isfile(os.path.join(AUDIO_DIR, f))]
     audio_file_names = [f.replace(".wav", "") for f in audio_files]
@@ -21,14 +22,16 @@ def add_songs():
             audio_file_names.remove(song["song_name"])
 
     if audio_file_names:
+        count = 0
         for audio_file in audio_file_names:
             print(f"Found audio file for new song: {audio_file}")
             new_song_name = audio_file
-            new_song = {"Id": len(songs) + 1, "song_name": new_song_name}
-            songs.append(new_song)
-            with open(UNGENERATED_SONGS_FILE, "w", encoding="utf-8") as f:
-                json.dump(songs, f, indent=4)
+            new_songs.append({"Id": count, "song_name": new_song_name})
+            songs.append(new_songs)
             print(f"Added song: {new_song_name} to ungenerated songs file. Run generate_lyrics to create lyrics.")
+            count += 1
+        with open(UNGENERATED_SONGS_FILE, "w", encoding="utf-8") as f:
+                json.dump(new_songs, f, indent=4)
     else:
         print("No new audio files found.")
 
@@ -89,4 +92,5 @@ def generate_lyrics():
     print("Lyrics generation complete.")
     print("ungenerated songs list emptied.")
 
-
+#add_songs()
+generate_lyrics()
