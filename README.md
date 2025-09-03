@@ -1,4 +1,4 @@
-# Console Text Writer
+# Karaoke Text Generator (and console output)
 
 A tool to generate and display song lyrics in sync with audio directly in your terminal, with Docker support.
 
