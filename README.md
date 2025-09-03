@@ -42,12 +42,9 @@ docker run --rm -it itzray/console-text-writer list
 
 ### Find this code in action on tiktok and youtube
 
-<a href="https://www.tiktok.com/@mhffn_">
-  <img src="https://commons.wikimedia.org/wiki/Category:TikTok#/media/File:Ionicons_logo-tiktok.svg" width="128"/>
-</a>
-<a href="https://www.youtube.com/@1ts_Ray/shorts">
-  <img src="https://commons.wikimedia.org/wiki/Category:YouTube_logos#/media/File:Logo_YouTube_(en_PNG).png" width="128"/>
-</a>
+**[TikTok](https://www.tiktok.com/@mhffn_)**
+
+**[Youtube](https://www.youtube.com/@1ts_Ray/shorts)**
 
 ### Current Considerations and Future Expansion
 
