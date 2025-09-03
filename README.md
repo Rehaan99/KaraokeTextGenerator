@@ -20,6 +20,12 @@ A tool to generate and display song lyrics in sync with audio directly in your t
 
 ### 🎵 Docker Commands
 
+The docker image can be found at **`itzray/console-text-writer`**
+
+```bash
+docker run --rm -it itzray/console-text-writer list
+```
+
 - **`cmd_list_songs`**  
   Lists all available songs with their IDs for playback.
 
@@ -34,4 +40,15 @@ A tool to generate and display song lyrics in sync with audio directly in your t
   docker run --rm -it console-text-writer play --song-id 1
   ```
 
+### Find this code in action on tiktok and youtube
+
+**[TikTok](https://www.tiktok.com/@mhffn_)**
+**[Youtube](https://www.youtube.com/@1ts_Ray/shorts)**
+
 ### Current Considerations and Future Expansion
+
+- Add Lite and Complete edition docker images, lite will be the current version, complete will include the ai generation (currently omitted due to file size)
+  - Turn the other functions into docker callable functions.
+  - Allow a long running container that can accept .wav files and create local lyric files.
+- Also play the audio file at the same time. Makes things easier to sync up.
+-
