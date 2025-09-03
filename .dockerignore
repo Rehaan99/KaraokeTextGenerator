@@ -6,3 +6,5 @@ audioFiles/
 *.wav
 *.bat
 run_subprocesses.py
+.git
+.gitignore
