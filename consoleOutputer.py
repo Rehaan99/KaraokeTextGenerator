@@ -3,7 +3,7 @@ import time
 import json
 import pyfiglet
 import argparse
-from availableSongs import songs
+from generateSong import songs
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 LYRICS_DIR = BASE_DIR / "lyricFiles"
