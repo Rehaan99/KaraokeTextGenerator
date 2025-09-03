@@ -5,6 +5,7 @@ generateSong.py
 audioFiles/
 *.wav
 *.bat
+*.sh
 run_subprocesses.py
 .git
 .gitignore
