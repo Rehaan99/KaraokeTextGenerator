@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+audioFiles/
+generateSong.py
+audioFiles/
+*.wav
+*.bat
+run_subprocesses.py
