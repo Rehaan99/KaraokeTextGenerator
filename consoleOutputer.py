@@ -3,11 +3,11 @@ import time
 import json
 import pyfiglet
 import argparse
-from generateSong import songs
 from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 LYRICS_DIR = BASE_DIR / "lyricFiles"
-
+SONG_LIST_JSON_FILE = BASE_DIR / "song_list.json"
+songs = json.load(open(SONG_LIST_JSON_FILE, "r", encoding="utf-8"))
 
 def clear_console():
     os.system("cls" if os.name == "nt" else "clear")
