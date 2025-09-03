@@ -98,7 +98,3 @@ def generate_lyrics():
             json.dump([], f, ensure_ascii=False, indent=2)
     print("Lyrics generation complete.")
     print("ungenerated songs list emptied.")
-
-#add_songs()
-
-generate_lyrics()
