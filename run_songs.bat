@@ -1,7 +1,6 @@
 @echo off
 
-REM Replace image name with actual docker image name - this is my local one, public one can be found at itzray/console-text-writer
-SET IMAGE_NAME=console-text-writer
+SET IMAGE_NAME=itzray/console-text-writer
 SET COMMAND=%1
 SET SONG_ID=%2
 
