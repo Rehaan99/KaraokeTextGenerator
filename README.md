@@ -1,24 +1,24 @@
-# 🎶 Console Text Writer
+# Console Text Writer
 
 A tool to generate and display song lyrics in sync with audio directly in your terminal, with Docker support.
 
 ---
 
-## ✨ Available Functions
+## Available Functions
 
-### 📝 Song Management
+### Song Management
 
 - **`add_songs`**  
   Scans `.wav` files in the `audioLyrics/` folder and adds them to the `ungenerated_songs` list.  
-  ➡️ Next, call `generate_lyrics` to process these songs.
+  Next, call `generate_lyrics` to process these songs.
 
 - **`generate_lyrics`**  
   Generates lyric timing JSON files stored in the `lyricFiles/` directory.  
-  ⚠️ Currently supports **English songs only**. Accuracy may vary — manual review is recommended.
+  Currently supports **English songs only**. Accuracy may vary — manual review is recommended.
 
 ---
 
-### 🎵 Docker Commands
+### Docker Commands
 
 The docker image can be found at **`itzray/console-text-writer`**
 
