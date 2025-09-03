@@ -1,0 +1,10 @@
+audioFiles/*
+lyricFiles/*
+__pycache__/
+*.pyc
+song_list.json
+ungenerated_songs.json
+
+
+!lyricFiles/readme.txt
+!audioFiles/readme.txt
