@@ -88,7 +88,7 @@ def generate_lyrics():
             "w",
             encoding="utf-8",
         ) as f:
-            json.dump("", f, ensure_ascii=False, indent=2)
+            json.dump([], f, ensure_ascii=False, indent=2)
     print("Lyrics generation complete.")
     print("ungenerated songs list emptied.")
 
