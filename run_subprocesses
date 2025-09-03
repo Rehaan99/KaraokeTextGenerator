@@ -1,0 +1,3 @@
+import subprocess
+#subprocess.run(["cmd", "/c", ".\\run_songs.bat", "list"])
+subprocess.run(["cmd", "/c", ".\\run_songs.bat", "play", "4"])
