@@ -52,4 +52,7 @@ docker run --rm -it itzray/console-text-writer list
   - Turn the other functions into docker callable functions.
   - Allow a long running container that can accept .wav files and create local lyric files.
 - Also play the audio file at the same time. Makes things easier to sync up.
--
+- Add GUI version that opens file explorer for adding wav files.
+  - Ensure Linux is also supported
+- Add GUI text display
+- Investigate using Youtube API, search for song or provide URL (May be best for MVP) and then automatically generate a .wav of the video.
